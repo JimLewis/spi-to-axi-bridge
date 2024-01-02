@@ -4,6 +4,7 @@ SetCoverageSimulateEnable true
 
 library spi2axi
 SetCoverageAnalyzeEnable true
+analyze src/synchronizer.vhd
 analyze src/spi2axi.vhd
 SetCoverageAnalyzeEnable false
 
