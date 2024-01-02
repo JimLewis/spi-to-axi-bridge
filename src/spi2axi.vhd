@@ -434,7 +434,7 @@ begin
                             s_axi_wvalid_int <= '0';
                             s_axi_wstrb      <= (others => '0');
                             --
-                            if s_axi_awvalid_int = '0' or s_axi_awready = '1' then
+                            if s_axi_awvalid_int = '0' then
                                 s_axi_bready <= '1';
                                 axi_state    <= AXI_WRITE_BRESP; -- move on when both write address and data have been acknowledged
                             end if;
